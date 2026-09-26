@@ -8,17 +8,17 @@ public class example202 {
 
         Scanner scanner = new Scanner(System.in);
 
-        String[] amigos = new String[5];
+        String[] friends = new String[5];
 
         for (int i = 0; i < 5; i++) {
             System.out.print("Introduce el nombre del amigo " + (i + 1) + ": ");
-            amigos[i] = scanner.nextLine();
+            friends[i] = scanner.nextLine();
         }
 
         System.out.println("\nLista de amigos:");
 
         for (int i = 0; i < 5; i++) {
-            System.out.println(amigos[i]);
+            System.out.println(friends[i]);
         }
 
         scanner.close();

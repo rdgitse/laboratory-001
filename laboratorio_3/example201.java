@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class example201 {
 
-    public static int sumar (int numero1, int numero2) {
-        return numero1 + numero2;
+    public static int sum (int number1, int number2) {
+        return number1 + number2;
     }
 
     public static void main (String[] args) {
@@ -13,14 +13,14 @@ public class example201 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Introduzca el primer número :");
-        int numero1 = scanner.nextInt();
+        int number1 = scanner.nextInt();
 
         System.out.println("Introduzca el segundo número: ");
-        int numero2 = scanner.nextInt();
+        int number2 = scanner.nextInt();
 
-        int resultado = sumar (numero1, numero2);
+        int result = sum (number1, number2);
 
-        System.out.println("La suma es: " + resultado);
+        System.out.println("La suma es: " + result);
 
         scanner.close();
     }

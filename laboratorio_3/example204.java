@@ -4,20 +4,20 @@ import java.util.Scanner;
 
 public class example204 {
 
-    public static double sumar (double numero1, double numero2) {
-        return numero1 + numero2;
+    public static double sum (double number1, double number2) {
+        return number1 + number2;
     }
 
-    public static double restar (double numero1, double numero2) {
-        return numero1 - numero2;
+    public static double subtraction (double number1, double number2) {
+        return number1 - number2;
     }
 
-    public static double multiplicar (double numero1, double numero2) {
-        return numero1 * numero2;
+    public static double multiply (double number1, double number2) {
+        return number1 * number2;
     }
 
-    public static double dividir (double numero1, double numero2) {
-        return numero1 / numero2;
+    public static double divide (double number1, double number2) {
+        return number1 / number2;
     }
 
     public static void main(String[] args) {
@@ -25,10 +25,10 @@ public class example204 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Introduce el primer número: ");
-        double numero1 = scanner.nextDouble();
+        double number1 = scanner.nextDouble();
 
         System.out.print("Introduce el segundo número: ");
-        double numero2 = scanner.nextDouble();
+        double number2 = scanner.nextDouble();
 
         System.out.println("\n¿Qué operación quieres realizar?");
         System.out.println("1. Sumar");
@@ -37,25 +37,25 @@ public class example204 {
         System.out.println("4. Dividir");
 
         System.out.print("Elige una opción: ");
-        int opcion = scanner.nextInt();
+        int option = scanner.nextInt();
 
-        switch (opcion) {
+        switch (option) {
 
             case 1:
-                System.out.println("Resultado: " + sumar (numero1,numero2));
+                System.out.println("Resultado: " + sum (number1,number2));
                 break;
 
             case 2:
-                System.out.println("Resultado: " + restar (numero1,numero2));
+                System.out.println("Resultado: " + subtraction (number1,number2));
                 break;
 
             case 3:
-                System.out.println("Resultado: " + multiplicar (numero1,numero2));
+                System.out.println("Resultado: " + multiply (number1,number2));
                 break;
 
             case 4:
-                if (numero2 !=0) {
-                    System.out.println("Resultado: " + dividir (numero1,numero2));
+                if (number2 !=0) {
+                    System.out.println("Resultado: " + divide (number1,number2));
                 } else {
                     System.out.println("No se puede dividir entre cero.");
                 }
