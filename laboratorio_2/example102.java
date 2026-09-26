@@ -15,15 +15,19 @@ public class example102 {
 
         while (guess != secretNumber) {
 
-            System.out.print("Adivine un número entre 1 y 100: ");
+            System.out.println("Adivine un número entre 1 y 100: ");
             guess = input.nextInt();
 
             if (guess < secretNumber) {
                 System.out.println("Muy bajo...");
-            } else if (guess > secretNumber) {
+            } 
+            
+            else if (guess > secretNumber) {
                 System.out.println("Muy alto!");
-            } else {
-                System.out.println("Felicidades! Adivinaste el número");
+            } 
+            
+            else {
+                System.out.print("Felicidades! Adivinaste el número");
             }
         }
 

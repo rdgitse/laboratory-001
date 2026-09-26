@@ -7,12 +7,14 @@ public class example101 {
         
         Scanner input = new Scanner(System.in);
 
-        System.out.print("¿Cuál es tu edad?: 8");
+        System.out.println("¿Cuál es tu edad?: ");
         int edad = input.nextInt();
 
         if (edad >= 18) {
             System.out.println("Usted es mayor de edad.");
-        } else {
+        } 
+        
+        else {
             System.out.println("Usted es menor de edad.");
         }
 
